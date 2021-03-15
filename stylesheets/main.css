@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+.about-section .about__words, .about-section .about__title, .about-section .about__pic, h1, nav .nav__skills, nav .nav__projects, nav .nav__about, nav .nav__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #F17083;
+}
+
+nav {
+  background-color: #CE4257;
+  height: 20vh;
+  width: 100%;
+  display: grid;
+  z-index: 1;
+  grid-template-columns: repeat(2, 1fr) min-content repeat(2, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+}
+nav a {
+  color: #eee;
+  text-decoration: none;
+  font-family: "Lora";
+  font-size: 4vh;
+}
+nav .logo {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  z-index: 1;
+}
+nav .nav__link {
+  background-color: #CE4257;
+}
+nav .nav__home {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+nav .nav__about {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+nav .nav__projects {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+nav .nav__skills {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.landing-picture {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 2fr);
+}
+
+h1 {
+  z-index: 1;
+  flex-direction: column;
+  font-size: 4vh;
+  color: #eee;
+  font-family: "Lora";
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.big-image {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  overflow: hidden;
+}
+.big-image img {
+  width: 100%;
+}
+
+.about-section {
+  font-family: "Lora";
+  color: #eee;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+.about-section .about__pic {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.about-section .about__title {
+  font-size: 4vh;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.about-section .about__words {
+  font-size: 2vh;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}

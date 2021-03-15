@@ -1,0 +1,16 @@
+$color-1: #4F000B;
+$color-2: #720026;
+$color-3: #CE4257;
+$color-4: #F17083;
+$color-5: #FF7F51;
+$color-6: #FF9B54;
+$color-7: #eee;
+
+%flex-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$primary-font: 'Lora';
