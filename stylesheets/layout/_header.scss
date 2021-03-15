@@ -126,3 +126,34 @@ h1 {
     grid-column-end: 5;
   }
 }
+
+.projects-section {
+  font-family: $primary-font;
+  background-color: $color-6;
+  color: $color-7;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+
+  .projects__words {
+    z-index: 1;
+    font-size: 2vh;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .projects__pic {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+    }
+  }
+}
