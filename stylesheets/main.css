@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-.about-section .about__words, .about-section .about__title, .about-section .about__pic, h1, nav .nav__skills, nav .nav__projects, nav .nav__about, nav .nav__home {
+.about-section .about__words, .about-section .about__title, .about-section .about__pic, nav .nav__skills, nav .nav__projects, nav .nav__about, nav .nav__home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,17 +64,19 @@ nav .nav__skills {
 }
 
 .landing-picture {
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: repeat(3, 2fr);
 }
 
 h1 {
+  display: flex;
+  align-items: center;
   z-index: 1;
   flex-direction: column;
   font-size: 4vh;
-  color: #eee;
+  color: #CE4257;
   font-family: "Lora";
   grid-row-start: 2;
   grid-row-end: 3;
@@ -96,28 +98,28 @@ h1 {
 .about-section {
   font-family: "Lora";
   color: #eee;
-  height: 80vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: 1fr min-content 1fr 3fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 3fr 2fr;
 }
 .about-section .about__pic {
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 .about-section .about__title {
   font-size: 4vh;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 4;
   grid-column-end: 5;
 }
 .about-section .about__words {
   font-size: 2vh;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
   grid-column-start: 4;
   grid-column-end: 5;
 }
