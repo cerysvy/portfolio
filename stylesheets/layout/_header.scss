@@ -1,7 +1,12 @@
+.home-section{
+  position: relative;
+}
+
 nav {  
   background-color: $color-3;
   height: 20vh;
   width: 100%;
+  position: fixed;
   display: grid;
   z-index: 1;
   grid-template-columns: repeat(2, 1fr) min-content repeat(2, 1fr);
@@ -60,30 +65,30 @@ nav {
 
 .landing-picture {
   height: 100vh;
+  background-color: $color-3;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(3, 2fr);
+  grid-template-rows: repeat(4, 2fr);
 }
 
 h1 {
   display: flex;
   align-items: center;
-  z-index: 1;
   flex-direction: column;
   font-size: 4vh;
   color: $color-3;
   font-family: $primary-font;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
 .big-image {
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
   overflow: hidden;
 
   img {
@@ -133,23 +138,23 @@ h1 {
   color: $color-7;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 2fr repeat(6, 1fr);
 
   .projects__words {
     z-index: 1;
     font-size: 2vh;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 5;
-    grid-column-start: 4;
+    grid-column-start: 2;
     grid-column-end: 5;
   }
 
   .projects__pic {
     grid-row-start: 2;
-    grid-row-end: 6;
+    grid-row-end: 8;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 13;
     overflow: hidden;
   
     img {
