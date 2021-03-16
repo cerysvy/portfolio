@@ -142,7 +142,6 @@ h1 {
   grid-template-rows: 2fr repeat(6, 1fr);
 
   .projects__words {
-    z-index: 1;
     font-size: 2vh;
     grid-row-start: 3;
     grid-row-end: 5;
@@ -160,5 +159,74 @@ h1 {
     img {
       width: 100%;
     }
+  }
+}
+
+.skills-section {
+  font-family: $primary-font;
+  color: $color-7;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 2fr repeat(6, 1fr);
+
+  .skill {
+    font-size: 2vh;
+    @extend %flex-center;
+    padding: 10px;
+    text-align: center;
+    background-color: $color-3;
+  }
+
+  .skill__1 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  }
+
+  .skill__2 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  }
+  
+  .skill__3 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  }
+  
+  .skill__4 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 11;
+  grid-column-end: 13;
+  }
+
+  .fa-linkedin {
+    @extend %self-centred;
+    color: $color-7;
+    font-size: 200px;
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+  }
+
+  .fa-envelope-square {
+    @extend %self-centred;
+    color: $color-7;
+    font-size: 200px;
+    grid-column: 7 / 8;
+    grid-row: 6 / 7;
+  }
+
+  .fa-github-square {
+    @extend %self-centred;
+    color: $color-7;
+    font-size: 200px;
+    grid-column: 10 / 11;
+    grid-row: 6 / 7;
   }
 }

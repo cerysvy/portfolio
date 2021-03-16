@@ -12,5 +12,10 @@ $color-7: #eee;
   align-items: center;
 }
 
+%self-centred{
+  align-self: center;
+  justify-self: center;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 $primary-font: 'Lora';
