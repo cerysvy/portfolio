@@ -35,15 +35,34 @@
   font-family: $primary-font;
   background-color: $color-6;
   color: $color-7;
+  font-size: 2vh;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 2fr repeat(6, 1fr);
 
-  .projects__words {
-    font-size: 2vh;
+  .projects__1 {
     grid-column: 2 / 5;
     grid-row: 3 / 5;
+  }
+  
+  .projects__2 {
+    grid-column: 9 / 12;
+    grid-row: 4 / 6;
+  }
+  
+  .projects__3 {
+    grid-column: 2 / 5;
+    grid-row: 5 / 7;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects__4 {
+    grid-column: 9 / 12;
+    grid-row: 6 / 8;
+    display: flex;
+    align-items: center;
   }
 
   .projects__pic {
@@ -94,26 +113,28 @@
     grid-row: 3 / 5;
   }
   
-  .fa-linkedin {
+  .fab{
     @extend %self-centred;
     color: $color-6;
     font-size: 200px;
+  }
+
+  .fab:hover{
+    color: $color-7;
+    cursor:pointer;
+  }
+
+  .fa-linkedin {
     grid-column: 4 / 5;
     grid-row: 6 / 7;
   }
 
   .fa-envelope-square {
-    @extend %self-centred;
-    color: $color-6;
-    font-size: 200px;
     grid-column: 7 / 8;
     grid-row: 6 / 7;
   }
 
   .fa-github-square {
-    @extend %self-centred;
-    color: $color-6;
-    font-size: 200px;
     grid-column: 10 / 11;
     grid-row: 6 / 7;
   }
